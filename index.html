@@ -87,6 +87,9 @@
             <a href="https://teamlamp.itch.io/vulpecula">
               Home Page
             </a>
+			<a href="https://github.com/Matthew-Tolentino/Vulpecula">
+              Src Code
+            </a>
           </div>
         </div>
         <div class="col-md-6 ">
@@ -110,22 +113,22 @@
 			Modified the Prime Game Engine to include the following functionalities:
 			</h7>
 			<ul>
-				<li> View frustum culling to reduce rendering work (purposely decrease FOV for demo)</li>
+				<li> View frustum culling to reduce rendering work (FOV decreased for demo purposes)</li>
 				<li> Implement blended, partial, and addivite animations </li>
-				<li> Implement scene aware animations thay play relative to raycasted position</li>
-				<li> Implement inverse kinematic override ontop of an animation</li>
+				<li> Implement scene aware animations that play relative to raycasted position</li>
+				<li> Implement inverse kinematic override</li>
 				<li> Tools: C++, Lua, Python, Visual Studio, Maya </li>
 			</ul>
 			<a href="https://drive.google.com/file/d/1IwxFTmWMAJ_Zoc3xaF6kVAzYm0gPJsUo/view?usp=drive_link">
               Culling Demo
             </a>
 			<a href="https://drive.google.com/file/d/1D2bq9dGY9ReVwnOpVNiGxlWiv3F7SMvp/view?usp=drive_link">
-              Blend Animation Demo
+              Animation Blending Demo
             </a>
 			<a href="https://drive.google.com/file/d/13h70UBAhyQYnbzP3c3FhfFSiktFZV3xR/view?usp=drive_link">
-              Scene Animation Demo
+              Reactive Animation Demo
             </a>
-			<a href="https://drive.google.com/file/d/1mQ-h8ezyNwmJ2Eaq4cQaYuhHa-D0SznA/view?usp=drive_link">
+			<a href="https://drive.google.com/file/d/1NumRX_GX2QqEREJ5jtB2b247BRYHegxZ/view?usp=sharing">
               Inverse Kinematics Demo
             </a>
           </div>
@@ -175,14 +178,16 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Live Single Camera MoCap
+                Motion Capture Streamer (In Development)
               </h2>
             </div>
             <h7>
-				Animate a 3D character in Unreal Engine 5 using an AI driven computer vision solution from MediaPipe
+				Animate a 3D skeletal rig in Unreal Engine 5 using AI driven computer vision solution from MediaPipe
 			</h7>
 			<ul>
-				<li> Currently still in development</li>
+				<li> Calculates the world coordniates of motion capture data by computing screen to world transformations of MediaPipe landmarks</li>
+				<li> Calulate the 3D skeletal transformation derived from filtered motion capture landmarks</li>
+				<li> Multiprocessed python scripts so multiple computer vision solutions can access the webcam stream simultaneously</li>
 				<li> Tools: C++, Unreal Engine, RapidJSON, Python, MediaPipe, Visual Studio, Git </li>
 			</ul>
             <a href="https://github.com/Trystan-Nguyen/AnimatorController">
